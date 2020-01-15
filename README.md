@@ -1,6 +1,6 @@
 # Semana Omnistack 10
 
 ## Roadmap
-[ ] - Backend
-[ ] - Frontend
-[ ] - Mobile
+- [ ] Backend
+- [ ] Frontend
+- [ ] Mobile
