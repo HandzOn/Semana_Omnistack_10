@@ -1,5 +1,5 @@
 const {githubApi} = require('../services/api');
-
+const parseStringAsArray = require('../utils/parseStringAsArray');
 const Dev = require('../models/Dev');
 
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
 
   async store(request, response) {
     const {github_username, techs, latitude, longitude} = request.body;
-    const techsArray = techs.split(',').map(tech => tech.trim());
+    const techsArray = parseStringAsArray(techs);
 
     let dev = await Dev.findOne({github_username});
     if (!dev) {
