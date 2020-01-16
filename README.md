@@ -2,5 +2,5 @@
 
 ## Roadmap
 - [x] Backend
-- [ ] Frontend
+- [x] Frontend
 - [ ] Mobile
