@@ -22,9 +22,9 @@ function App() {
   }, []);
 
   async function handleAddDev(data) {
-    const {githubUserName: github_username, techs, latitude, longitude} = data;
+    const {githubUserName: github_username} = data;
     const response = await api.post('/devs', {
-      ...data, githubUserName: github_username
+      ...data, github_username
     });
     setDevs([...devs, response.data]);
   }
